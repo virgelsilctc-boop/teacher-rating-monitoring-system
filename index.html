@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teacher Rating Monitoring System</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+<aside class="sidebar" id="sidebar">
+  <div class="brand">Teacher Rating Monitoring System<small>Sunday → Saturday reporting</small></div>
+  <div class="nav">
+    <button class="active" data-page="dashboard">📊 Dashboard</button>
+    <button data-page="records">📝 Rating Records</button>
+    <button data-page="totals">⭐ Teacher Star Totals</button>
+    <button data-page="weekly">📅 Weekly Report</button>
+    <button data-page="monthly">📈 Monthly Report</button>
+    <button data-page="teachers">👩‍🏫 Teacher Performance</button>
+    <button data-page="actions">🎯 Action Plan & Target</button>
+    <button data-page="reports">📤 Reports / Export</button>
+    <button data-page="settings">⚙️ Settings</button>
+  </div>
+</aside>
+
+<main class="main">
+<header class="topbar">
+  <div><button class="btn secondary mobileMenu" id="menuBtn">☰</button> <h1 id="pageTitle" style="display:inline">Dashboard</h1></div>
+  <div class="monthbox">
+    <button class="btn secondary" id="prevMonth">‹</button>
+    <input type="month" id="monthPicker">
+    <button class="btn secondary" id="nextMonth">›</button>
+  </div>
+</header>
+
+<section id="dashboard" class="page"></section>
+<section id="records" class="page hidden"></section>
+<section id="totals" class="page hidden"></section>
+<section id="weekly" class="page hidden"></section>
+<section id="monthly" class="page hidden"></section>
+<section id="teachers" class="page hidden"></section>
+<section id="actions" class="page hidden"></section>
+<section id="reports" class="page hidden"></section>
+<section id="settings" class="page hidden"></section>
+</main>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
